@@ -20,6 +20,12 @@ h3 {
     margin-top: 0px !important;
 }
 
+p.custom-p {
+    margin: 0px;
+    font-size: 14px;
+    color: #555;
+}
+
 .st-key-chat_window {
     border: none;
     padding-left: 0px;
@@ -186,7 +192,14 @@ button.st-emotion-cache-1ke4xua.em9zgd018 {
 
 /* Logo */
 
-.st-emotion-cache-1p7umbn, .st-emotion-cache-13lvdqn {
+img.stLogo {
     margin: 0rem 1rem 1rem 0rem;
 }
             
+@media screen and (max-width: 960px) {
+    /* Your CSS rules for screens narrower than 960px go here */
+    .block-container {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+  }

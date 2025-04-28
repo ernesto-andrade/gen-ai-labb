@@ -32,33 +32,15 @@ def menu():
         st.sidebar.markdown("### Meny")
 
         st.sidebar.page_link("Start.py", label="Start", icon=":material/home:")
-        st.sidebar.markdown("###### ")
-
-        st.sidebar.markdown("### AI-labbet")
-
-        st.sidebar.page_link("pages/chat.py", label="Chat", icon=":material/forum:")
         st.sidebar.page_link("pages/transcribe.py", label="Transkribering", icon=":material/transcribe:")
 
         st.sidebar.markdown("# ")
-        with st.sidebar.container(border = True):
-            st.caption(f"""__Version:__ {st.session_state["app_version"]}  
-            __Uppdaterad:__ {st.session_state["update_date"]}
-            """)
 
     if st.session_state['language'] == "English":
 
         st.sidebar.markdown("### Menu")
 
         st.sidebar.page_link("Start.py", label="Start", icon=":material/home:")
-        st.sidebar.markdown("###### ")
-
-        st.sidebar.markdown("### AI-lab")
-
-        st.sidebar.page_link("pages/chat.py", label="Chat", icon=":material/forum:")
         st.sidebar.page_link("pages/transcribe.py", label="Transcribe", icon=":material/transcribe:")
 
         st.sidebar.markdown("# ")
-        with st.sidebar.container(border = True):
-            st.caption(f"""__Version:__ {st.session_state["app_version"]}  
-            __Updated:__ {st.session_state["update_date"]}
-            """)

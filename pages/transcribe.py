@@ -6,11 +6,11 @@ from datetime import datetime
 import hashlib
 import hmac
 from concurrent.futures import ThreadPoolExecutor
+import pathlib
 
 # External imports
 import streamlit as st
 from openai import OpenAI
-#from audiorecorder import audiorecorder
 import tiktoken
 
 # Local imports
@@ -25,6 +25,13 @@ from functions.menu import menu
 st.logo("images/logo_main.png", icon_image = "images/logo_small.png")
 
 page_config()
+
+def load_css(file_path):
+    with open(file_path) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+css_path = pathlib.Path("assets/styles.css")
+load_css(css_path)
 
 # Check if language is already in session_state, else initialize it with a default value
 if 'language' not in st.session_state:
